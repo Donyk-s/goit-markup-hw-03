@@ -93,6 +93,7 @@ line-height: 1.71;
   color: var(--mail-tel);
   text-decoration: none;
   font-style: normal;
+   line-height: 1.71;
 }
 
 /*---------Hero-----*/
