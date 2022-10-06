@@ -9,46 +9,53 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&семья=Oleo+Script:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/styles.css">
+ <link rel=“stylesheet” href=“https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css” integrity=“sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=” crossorigin=“anonymous” referrerpolicy=“no-referrer”/>  
+<link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     <!--шапка сайту-->
-    <header class="page-header"> 
+    <header class="page-header">
+        <div class="container"> 
         <nav class="nav">
         <a href="index.html" class="icon-logo"><span class="logo">Web</span><span class="logo-part">Studio</span></a>
         <ul class="nav-list">
-            <li class="nav-item"><a class="nav-link current" href="index.html">Студія</a></li>
-            <li class="nav-item"><a class="nav-link" href="portfolio.html">Портфоліо</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Контакти</a></li>
+                <li class="nav-item"><a class="nav-link current" href="index.html">Студія</a></li>
+                <li class="nav-item"><a class="nav-link" href="portfolio.html">Портфоліо</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Контакти</a></li>
         </ul>
         </nav>
         <ul class="contacts">
             <li><a class="mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
             <li><a class="tel" href="tel:+380981111111">+38 096 111 11 11</a></li>
         </ul>
+        </div>
     </header>
     <main><!-- маін-->
     <!--думаю тут буде якийсь банер чи малюнок-->
         <section class="hero-section"> 
+            <div class="container">
             <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
             <button class="button" type="button">Замовити послугу</button>
+            </div>
         </section>
     <section class="features"><!--Особливості тут явно має бути заголовок-->
-        <h2 class="visually-hidden">Особливості</h2> <!--тут явно має бути заголовок-->
-        <ul class="features-list">
-            <li class="specialty-list"><h3 class="specialty">Увага до деталей</h3>
-                <p class="specialty-text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
+       <div class="container">
+            <h2 class="visually-hidden">Особливості</h2> <!--тут явно має бути заголовок-->
+            <ul class="features-list">
+                <li class="specialty-list"><h3 class="specialty">Увага до деталей</h3>
+                    <p class="specialty-text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
+                </li>
+                <li class="specialty-list"><h3 class="specialty">Пунктуальність</h3>
+                <p class="specialty-text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
             </li>
-            <li class="specialty-list"><h3 class="specialty">Пунктуальність</h3>
-            <p class="specialty-text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
-        </li>
-            <li class="specialty-list"><h3 class="specialty">Планування</h3>
-            <p class="specialty-text">Так само консультація з широким активом значною мірою зумовлює.</p>
-        </li>
-            <li class="specialty-list"><h3 class="specialty">Сучасні технології</h3>
-                <p class="specialty-text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
+                <li class="specialty-list"><h3 class="specialty">Планування</h3>
+                <p class="specialty-text">Так само консультація з широким активом значною мірою зумовлює.</p>
             </li>
-        </ul>
+                <li class="specialty-list"><h3 class="specialty">Сучасні технології</h3>
+                    <p class="specialty-text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
+                </li>
+            </ul>
+       </div>
     </section>
     <section class="work"><h2 class="work-title">Чим ми займаємося</h2> 
         <ul class="work-list">

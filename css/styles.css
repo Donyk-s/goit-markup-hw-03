@@ -9,6 +9,30 @@
   --button-servise: #188ce8;
   --mail-tel: rgba(255, 255, 255, 0.6);
 }
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+}
+button {
+  cursor: pointer;
+}
+address {
+  font-style: normal;
+}
+img {
+  display: block;
+}
 body {
   font-family:Roboto, sans-serif;
 color: var(--h-color);
@@ -17,6 +41,13 @@ letter-spacing: 0.03em;
 background-color: var(--background-header);
 }
 
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 2px solid red;
+}
 /* Логотип*/
 .logo :hover{
   color :var(--hover-color);   
@@ -38,6 +69,12 @@ font-family: Raleway, sans-serif;
 font-weight: 700;
 font-size: 26px;
 line-height: 1.2;
+display: inline-block;
+  width: 145px;
+left: 215px;
+padding-top: 24px;
+padding-bottom: 25;
+
 }
 /*------ The End-----*/
 /* -----------Головна навігація------ */
@@ -106,10 +143,13 @@ font-style: normal;
 font-weight: 900;
 font-size: 44px;
 line-height: 1.36;
-text-align: center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
 color: var(--background-header);
+width: 696px;
+box-sizing: border-box;
+margin: 0 auto;
+
 }
 .button{
   font-family: inherit;
@@ -120,6 +160,12 @@ letter-spacing: 0.06em;
  background-color: var(--hover-color);
  color: var(--background-header);
   cursor: pointer;
+   display: inline-block; 
+    box-sizing: border-box;
+    padding: 10px 32px;
+    width: 216px;
+   margin-bottom: 200px;
+   margin: top 30px;
 }
 .button:hover,
 .button:focus{
@@ -262,4 +308,17 @@ letter-spacing: 0.06em;
 font-size: 16px;
 line-height: 1.87;
 color: var(--p-color);
+}
+/*----Позиціювання-----*/
+
+.page-header{
+  padding-top: 24;
+  padding-bottom: 25;
+}
+
+.hero-section{
+ padding-top:200px;
+ padding-bottom: 200;
+ text-align: center;
+
 }
