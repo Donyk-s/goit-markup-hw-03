@@ -48,6 +48,15 @@ background-color: var(--background-header);
   margin: 0 auto;
   outline: 2px solid red;
 }
+
+/*----початок---*/
+
+.page-header{
+  padding-top: 24;
+  padding-bottom: 25;
+}
+  
+
 /* Логотип*/
 .logo :hover{
   color :var(--hover-color);   
@@ -73,14 +82,17 @@ display: inline-block;
   width: 145px;
 left: 215px;
 padding-top: 24px;
-padding-bottom: 25;
-
 }
 /*------ The End-----*/
 /* -----------Головна навігація------ */
 
+.nav{
+  display: flex;
+  align-items: center;
+}
 .nav-list{
   list-style: none;
+   display: flex;
 
 }
 .nav-list :hover,
@@ -106,6 +118,8 @@ letter-spacing: 0.02em;
   list-style: none;
 font-weight: 500;
 line-height: 1.71;
+display: flex;
+justify-content: flex-end;
 }
 .mail{
   color: var(--p-color);
@@ -134,10 +148,15 @@ line-height: 1.71;
 }
 
 /*---------Hero-----*/
-
 .hero-section{
-  background-color: var(--hero-background);
+ padding-top:200px;
+ text-align: center;
+ background-color: var(--hero-background);
 }
+.hero-padding{
+  padding-bottom: 200px;
+}
+
 .hero-title{
 font-style: normal;
 font-weight: 900;
@@ -149,6 +168,9 @@ color: var(--background-header);
 width: 696px;
 box-sizing: border-box;
 margin: 0 auto;
+margin-bottom: 30px;
+
+
 
 }
 .button{
@@ -160,12 +182,16 @@ letter-spacing: 0.06em;
  background-color: var(--hover-color);
  color: var(--background-header);
   cursor: pointer;
-   display: inline-block; 
-    box-sizing: border-box;
+  white-space: nowrap;
+word-wrap: normal;
     padding: 10px 32px;
     width: 216px;
-   margin-bottom: 200px;
-   margin: top 30px;
+display: flex;
+margin: 0 auto;
+
+
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
 }
 .button:hover,
 .button:focus{
@@ -311,14 +337,4 @@ color: var(--p-color);
 }
 /*----Позиціювання-----*/
 
-.page-header{
-  padding-top: 24;
-  padding-bottom: 25;
-}
 
-.hero-section{
- padding-top:200px;
- padding-bottom: 200;
- text-align: center;
-
-}
