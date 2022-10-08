@@ -9,6 +9,11 @@
   --button-servise: #188ce8;
   --mail-tel: rgba(255, 255, 255, 0.6);
 }
+*,
+ *::before, 
+ *::after {
+    box-sizing: inherit;
+}
 
 p,
 h1,
@@ -51,28 +56,27 @@ background-color: var(--background-header);
 
 /*----початок---*/
 
-.page-header{
-  padding-top: 24;
-  padding-bottom: 25;
-}
-  
+
 
 /* Логотип*/
 .logo :hover{
-  color :var(--hover-color);   
+  color :var(--hover-color); 
+   
 }
 
 .logo-part{
     color:#000000;
+   
 }
 
 .logo-part-footer{
   color: var(--background-header);
+ 
 }
 /* ------------ Два кольори лого--------*/
 .icon-logo{
   color:var(--hover-color);
-  
+  margin-right: 93px;
   text-decoration: none;
 font-family: Raleway, sans-serif; 
 font-weight: 700;
@@ -80,19 +84,28 @@ font-size: 26px;
 line-height: 1.2;
 display: inline-block;
   width: 145px;
-left: 215px;
-padding-top: 24px;
+ 
 }
 /*------ The End-----*/
 /* -----------Головна навігація------ */
+.header-paddind{
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
 
 .nav{
   display: flex;
   align-items: center;
 }
+.header-container{
+   display: flex;
+  align-items: center; 
+}
+
 .nav-list{
   list-style: none;
-   display: flex;
+  display: flex;
+  gap: 50px;
 
 }
 .nav-list :hover,
@@ -101,11 +114,12 @@ padding-top: 24px;
 } 
  
 .nav-link{
-  font-weight: 500;
+font-weight: 500;
 line-height: 1.14;
 letter-spacing: 0.02em;
-  color: var(--h-color);
-  text-decoration: none;
+color: var(--h-color);
+text-decoration: none;
+
 }
 .current{
   color: var(--hover-color);
@@ -118,44 +132,48 @@ letter-spacing: 0.02em;
   list-style: none;
 font-weight: 500;
 line-height: 1.71;
-display: flex;
-justify-content: flex-end;
+ display: flex;
+margin-left: 344px;
+ gap: 50px;
 }
+
+
 .mail{
   color: var(--p-color);
   text-decoration: none;
   font-style: normal;
   line-height: 1.71;
+  box-sizing: border-box;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+  
  
- } 
 .tel{
  color: var(--p-color);
   text-decoration: none;
   font-style: normal;
   line-height: 1.71;
+   box-sizing: border-box;
+   padding-top: 32px;
+   padding-bottom: 32px;
+  
+
   }
 .contacts :hover,
 .contacts :focus{
   color: var(--hover-color);
 }
 
-.mail-footer,
-.tel-footer{
-  color: var(--mail-tel);
-  text-decoration: none;
-  font-style: normal;
-   line-height: 1.71;
-}
-
 /*---------Hero-----*/
 .hero-section{
  padding-top:200px;
+ padding-bottom: 200px;
  text-align: center;
  background-color: var(--hero-background);
 }
-.hero-padding{
-  padding-bottom: 200px;
-}
+
 
 .hero-title{
 font-style: normal;
@@ -185,12 +203,10 @@ letter-spacing: 0.06em;
   white-space: nowrap;
 word-wrap: normal;
     padding: 10px 32px;
-    width: 216px;
+    max-width: 216px;
 display: flex;
 margin: 0 auto;
-
-
-   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 4px;
 }
 .button:hover,
@@ -213,9 +229,19 @@ border-radius: 4px;
     margin: -1px;
 }
 
+.features{
+padding: 94px 0;
+}
+.special{
+  display: flex;
+}
 .features-list{
   list-style: none;
   
+}
+.specialty-list{
+  width: calc((100% - 90px) / 4);
+    margin-right: 30px;
 }
 
 .specialty{
@@ -225,7 +251,11 @@ font-weight: 700;
 line-height: 1.14;
 text-transform: uppercase;
 
+
 color: var(--h-color);
+}
+.work{
+  padding-bottom: 94px;
 }
 .specialty-text {
 line-height: 1.7;
@@ -233,19 +263,34 @@ color: var(--p-color)
 }
 .work-list{
   list-style: none;
+  display: flex;
+  justify-content: space-around;
+gap: 30px;
 }
+/*
+.work-pick{
+  flex-basis: calc((100% - 60) / 3); 
+gap: 30px;
+}*/
+
 .work-title{
 font-weight: 700;
 font-size: 36px;
 line-height: 1.16;
 text-align: center;
 color: var(--h-color);
+padding-bottom: 50px;
+max-width: 366px;
+margin: 0 auto;
 }
 .team {
   background-color: var(--team-background);
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .team-members{
  background-color: var(--background-header);
+ text-align: center;
 }
 .team-title {
   font-weight: 700;
@@ -253,32 +298,44 @@ font-size: 36px;
 line-height: 1.16;
 text-align: center;
 color: var(--h-color);
+white-space: nowrap;
+padding-bottom: 50px;
+max-width: 246px;
+margin: 0 auto;
 }
 .team-list {
   list-style: none;
   line-height: 1.18;
+      justify-content: space-around;
+      gap: 30px;
 }
 .team-name{
 font-weight: 500;
 font-size: 16px;
 text-align: center;
 color: var(--h-color);
+padding-top: 30px;
+padding-bottom: 10px;
 }
 
 .team-position{
 font-size: 16px;
 text-align: center;
 color: var(--p-color);
+padding-bottom: 30px;
 }
 
 /*------Footer----*/
 
 .contacts-footer{
   background-color: var(--hero-background);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .contacts-list{
     list-style: none;
     font-weight: 400;
+    padding-top: 20px;
 }
 .contacts-list :hover,
 .contacts-list :focus{
@@ -291,6 +348,22 @@ color: var(--p-color);
  font-style: normal;
  line-height: 1.71;
 color: var(--background-header);
+max-width: 231px;
+padding-bottom: 9px;
+box-sizing: border-box;
+
+}
+.mail-footer,
+.tel-footer{
+  color: var(--mail-tel);
+  text-decoration: none;
+  font-style: normal;
+   line-height: 1.71;
+   box-sizing: border-box;
+}
+.mail-footer{
+  padding-bottom: 9px;
+  max-width: 136px;
 }
 
 /*------btn-filter Портфоліо---*/
@@ -304,6 +377,11 @@ background-color: var(--team-background);
  border-color: transparent;
  cursor: pointer;
 color: var(--h-color);
+box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+border-radius: 4px;
+padding-top: 6px;
+padding-bottom: 6px;
+min-width: 73px;
 
 }
 .btn:hover,
@@ -313,6 +391,12 @@ background: var(--hover-color);
 box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 border-radius: 4px;
 }
+.btn-filter{
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+
+}
 
 .btn-list{
   list-style: none;
@@ -320,20 +404,38 @@ border-radius: 4px;
 }
 
 /*---The end Filtr--*/
+.oll-portfol{
+  padding-top: 94px;
+}
 
 .potfol{
   list-style: none;
+  flex-wrap: wrap;
+ gap: 30px; 
+padding-left: 15px;
+padding-top: 50px;
 }
+
 .portfol-title{
 font-weight: 700;
 font-size: 18px;
 line-height: 2;
 letter-spacing: 0.06em;
+padding-left: 24px;
+padding-top: 20px;
+padding-bottom: 4px;
+
+
 }
 .portfol-txt{
 font-size: 16px;
 line-height: 1.87;
 color: var(--p-color);
+padding-left: 24px;
+padding-bottom: 20px;
+}
+.circle{
+  border: 1px solid #EEEEEE;
 }
 /*----Позиціювання-----*/
 
