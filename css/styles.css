@@ -130,7 +130,6 @@ padding-top: 32px;
 .contacts{
   list-style: none;
 font-weight: 500;
-line-height: 1.71;
  display: flex;
 margin-left: auto;
  gap: 50px;
@@ -141,7 +140,7 @@ margin-left: auto;
   color: var(--p-color);
   text-decoration: none;
   font-style: normal;
-  line-height: 1.71;
+  line-height: 1.14;
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -153,7 +152,7 @@ margin-left: auto;
  color: var(--p-color);
   text-decoration: none;
   font-style: normal;
-  line-height: 1.71;
+  line-height: 1.14;
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -229,12 +228,16 @@ padding: 94px 0;
 }
 
 .features-list{
-  list-style: none;
-  
+  list-style: none;  
 }
+
 .specialty-list{
   width: calc((100% - 90px) / 4);
     margin-right: 30px;
+}
+
+.features-list :last-child{
+  margin: 0;
 }
 
 .specialty{
@@ -306,6 +309,7 @@ font-weight: 500;
 font-size: 16px;
 text-align: center;
 color: var(--h-color);
+margin-bottom: 10px;
 
 }
 
@@ -331,9 +335,13 @@ color: var(--p-color);
 .contacts-list{
     list-style: none; 
 }
+.contacts-list :last-child{
+  margin-bottom: 0;
+}
 .list-link{
   margin-bottom: 9px;
 }
+
 .contacts-list :hover,
 .contacts-list :focus{
   color: var(--hover-color);
